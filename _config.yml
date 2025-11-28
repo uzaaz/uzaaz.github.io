@@ -69,34 +69,40 @@ author:
       url: "https://uzaaz.github.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/Hamza_Mgh"
+      url: "https://x.com/Hamza_Mgh"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/uzaaz"
+    - label: "linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/hamzamaghraoui/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/hmz_mgh"
     - label: "Youtube"
       icon: "fab fa-fw fa-youtube"
       url: "https://youtube.com/@TrueGrit.1"
-    - label: "linkedin"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/hamzamaghraoui/"
-
-
-      
 
 footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://x.com/Hamza_Mgh/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/"
+    - label: "linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/hamzamaghraoui/"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/hmz_mgh"
+    - label: "Youtube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://youtube.com/@TrueGrit.1"
 
 defaults:
   # _posts
