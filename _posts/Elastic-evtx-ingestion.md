@@ -1,7 +1,7 @@
 ---
-title: "Post: elastic-evtx-ingestion"
+title: "Elastic-evtx-ingestion using winlogbeat"
 categories:
-  - Blog
+  - tutorial
 tags:
   - elastic
   - evtx
