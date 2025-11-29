@@ -167,4 +167,6 @@ To clean Logs from elastic head to the Developper Tools an past the following li
 DELETE _data_stream/winlogbeat-*
 ```
 
+  avatar : "/assets/images/bio-photo.jpg"
+
 [link-repo]: https://github.com/uzaaz/elastic-evtx-ingestion
