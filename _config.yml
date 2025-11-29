@@ -60,7 +60,7 @@ plugins:
 author:
   name   : "Hamza Maghraoui"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "I read logs so attackers don’t write the story."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
