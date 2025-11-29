@@ -144,7 +144,22 @@ foreach ($file in $files) {
 Write-Host "BATCH COMPLETED." -ForegroundColor Green
 ```
 
-Clean Logs from elastic (Dev Tools):
+Save the script as `ingest.ps1` and save it in:
+
+```sh
+C:\ELK_Forensics
+├── ├
+│   └── ingest.ps1
+```
+
+to run in **Powershell**:
+
+```sh
+cd C:\ELK_Forensics
+.\ingest.ps1
+```
+
+To clean Logs from elastic head to the Developper Tools an past the following line, then execute:
 
 ```
 DELETE _data_stream/winlogbeat-*
