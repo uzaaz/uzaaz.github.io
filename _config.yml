@@ -62,8 +62,6 @@ author:
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "My awesome biography constrained to a sentence or two goes here."
   links:
-      icon: "fas fa-fw fa-map-marker"
-
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://uzaaz.github.io"
@@ -94,9 +92,6 @@ footer:
     - label: "linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/hamzamaghraoui/"
-    - label: "Youtube"
-      icon: "fab fa-fw fa-youtube"
-      url: "https://youtube.com/@TrueGrit.1"
 
 defaults:
   # _posts
