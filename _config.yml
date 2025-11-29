@@ -65,8 +65,8 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://uzaaz.github.io"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+    - label: "X"
+      icon: "fab fa-fw fa-x-square"
       url: "https://x.com/Hamza_Mgh"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -83,8 +83,8 @@ author:
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+    - label: "X"
+      icon: "fab fa-fw fa-x-square"
       url: "https://x.com/Hamza_Mgh/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
