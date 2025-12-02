@@ -1,5 +1,18 @@
 ---
-layout: home
+layout: archive
+title: "Hex & Logs"
 author_profile: true
+excerpt: "I read logs so attackers don’t write the story."
+header:
+  overlay_image: /assets/images/header-002.jpg
 ---
 
+{% include base_path %}
+
+<h3 class="archive__subtitle">
+  {{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}
+</h3>
+
+{% for post in site.posts %}
+  {% include archive-single.html %}
+{% endfor %}
