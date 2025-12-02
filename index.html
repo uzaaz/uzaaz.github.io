@@ -1,20 +1,14 @@
 ---
-layout: archive
-author_profile: true
+
 title: "Hex & Logs"
-excerpt: "I read logs so attackers don’t write the story."
+layout: single
+author_profile: true
+
+excerpt: "I read logs so attackers don’t write the story"
+
 header:
-  overlay_image: /assets/images/banner-home.jpg   # make sure this file exists
+  overlay_image: /assets/images/header-002.jpg
+  overlay_filter: 0.4
+  caption: "Photo credit: Unsplash"
+
 ---
-
-{% include base_path %}
-
-<h3 class="archive__subtitle">
-  {{ site.data.ui-text[site.locale].recent_posts | default: "Recent posts" }}
-</h3>
-
-{% for post in paginator.posts %}
-  {% include archive-single.html %}
-{% endfor %}
-
-{% include paginator.html %}
