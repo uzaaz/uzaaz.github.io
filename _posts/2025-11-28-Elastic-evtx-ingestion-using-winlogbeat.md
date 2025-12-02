@@ -7,8 +7,10 @@ header:
 
 toc: true
 toc_label: "Table of Contents"
+# toc_icon: "cog"
 
 last_modified_at: 2025-11-24T22:20:26-04:00
+
 categories:
   - tutorial
 tags:
