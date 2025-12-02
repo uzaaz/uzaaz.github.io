@@ -1,7 +1,11 @@
 ---
 layout: single
 header:
-  overlay_image: /assets/images/banner-004.jpg
+  overlay_image: /assets/images/banner-007.jpg
+  overlay_filter: 0.4
+
+last_modified_at: 2025-11-24T22:20:26-04:00
+categories:
 ---
 
 # Flare-On 12: NTFSM - Solving a Finite State Machine with Binary Ninja
