@@ -332,7 +332,7 @@ defaults:
       share: true
       related: true
       header:
-        image: /assets/images/banner-home.jpg
+        overlay_image: /assets/images/banner-home.jpg
         
   # _pages
   - scope:
@@ -342,13 +342,13 @@ defaults:
       layout: single
       author_profile: true
       header:
-        image: /assets/images/banner-home.jpg
+        overlay_image: /assets/images/banner-home.jpg
         
   # Homepage
   - scope:
       path: "index.html"
     values:
       header:
-        image: /assets/images/banner-home.jpg
+        overlay_image: /assets/images/banner-home.jpg
 
 # rebuild
