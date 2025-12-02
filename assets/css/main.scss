@@ -8,17 +8,14 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-/* Custom: thin hero banner like Jack Hacks */
-
-/* Do not force a tall hero box */
+/* Custom: make header banner thin on all pages/posts */
 .page__hero {
-  min-height: 0;
+  min-height: 0;      /* no forced tall hero */
   padding-top: 0;
   padding-bottom: 0;
 }
 
-/* Control visual thickness with small inner padding */
 .page__hero--overlay .wrapper {
-  padding-top: 1.8rem;    /* 1.5–2.0rem ≈ Jack Hacks thickness */
-  padding-bottom: 1.8rem;
+  padding-top: 1.4rem;   /* lower = thinner, higher = thicker */
+  padding-bottom: 1.4rem;
 }
