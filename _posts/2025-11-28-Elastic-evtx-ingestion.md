@@ -2,8 +2,7 @@
 layout: single
 title: "Elastic-evtx-ingestion using winlogbeat"
 header:
-  overlay_image: header-002.jpg
-  overlay_filter: 0.4          # darken a bit; 0–1, higher = darker
+  overlay_image: /assets/images/header-002.jpg
 
 categories:
   - tutorial
@@ -11,7 +10,6 @@ tags:
   - elastic
   - evtx
   - ELK
-link: https://uzaaz.github.io/tutorial/Elastic-evtx-ingestion/
 
 ---
 
