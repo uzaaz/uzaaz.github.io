@@ -3,7 +3,12 @@ layout: single
 header:
   overlay_image: /assets/images/banner-005.jpg
   overlay_filter: 0.6
-codeclasses: wide
+classes: wide
+
+toc: true
+toc_label: "My Table of Contents"
+toc_icon: "cog"
+
 last_modified_at: 2025-11-24T22:20:26-04:00
 categories:
   - tutorial
