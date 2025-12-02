@@ -17,14 +17,12 @@ search: false
   padding-bottom: 0;
 }
 
-/* Limit the visible banner height */
 .page__hero-image {
-  max-height: 140px;     /* try 100–160px until it matches what you want */
+  max-height: 70px;   /* was 140px */
   overflow: hidden;
 }
 
-/* Tight inner padding for text over image */
 .page__hero--overlay .wrapper {
-  padding-top: 1.0rem;
-  padding-bottom: 1.0rem;
+  padding-top: 0.5rem;     /* was 1.0rem */
+  padding-bottom: 0.5rem;
 }
