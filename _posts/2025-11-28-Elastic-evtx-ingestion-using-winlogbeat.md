@@ -12,8 +12,6 @@ tags:
 
 ---
 
-# Elastic-evtx-ingestion using winlogbeat
-
 ### 🚀 Project Overview
 
 Source files [Repository][link-repo].
