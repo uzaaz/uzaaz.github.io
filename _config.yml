@@ -333,6 +333,8 @@ defaults:
       related: true
       header:
         overlay_image: /assets/images/banner-005.jpg
+        overlay_filter: 0.0
+        show_overlay_excerpt: false
         
   # _pages
   - scope:
@@ -343,12 +345,16 @@ defaults:
       author_profile: true
       header:
         overlay_image: /assets/images/banner-004.jpg
-        
+        overlay_filter: 0.5
+        show_overlay_excerpt: false
+
   # Homepage
   - scope:
       path: "index.html"
     values:
       header:
-        overlay_image: /assets/images/banner-003.jpg
+        overlay_image: /assets/images/banner-002.jpg
+        overlay_filter: 0.5
+        show_overlay_excerpt: false
 
 # rebuild
