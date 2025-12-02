@@ -8,4 +8,13 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+/* Custom: make header banner look thinner without breaking layout */
+.page__hero--overlay .wrapper {
+  padding-top: 2.5rem;     /* reduce vertical padding */
+  padding-bottom: 2.5rem;  /* tweak these until you like the thickness */
+}
 
+/* optional: let the hero auto-size to content, no forced min-height */
+.page__hero {
+  min-height: auto;
+}
