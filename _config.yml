@@ -353,7 +353,7 @@ defaults:
       path: "index.html"
     values:
       header:
-        overlay_image: /assets/images/banner-003.jpg
+        overlay_image: /assets/images/banner-002.jpg
         overlay_filter: 0.5
         show_overlay_excerpt: false
 
