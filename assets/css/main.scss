@@ -18,11 +18,11 @@ search: false
 }
 
 .page__hero-image {
-  max-height: 70px;   /* was 140px */
+  max-height: 40px;   /* ultra-thin banner */
   overflow: hidden;
 }
 
 .page__hero--overlay .wrapper {
-  padding-top: 0.5rem;     /* was 1.0rem */
-  padding-bottom: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
