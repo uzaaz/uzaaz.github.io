@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "Hamza M."
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I read **logs** so attackers don’t write the ***story***."
   location         : "Morocco"
   email            :
