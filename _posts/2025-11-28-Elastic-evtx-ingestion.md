@@ -6,7 +6,7 @@ tags:
   - elastic
   - evtx
   - ELK
-link: https://github.com/uzaaz/elastic-evtx-ingestion
+link: https://uzaaz.github.io/tutorial/Elastic-evtx-ingestion/
 header:
   image: /assets/images/header-002.jpg
 ---
