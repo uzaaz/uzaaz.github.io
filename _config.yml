@@ -11,7 +11,7 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
+remote_theme             : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -22,7 +22,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Hamza M."
 description              : "An amazing website."
-url                      : https://uzaaz.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://uzaaz.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -53,7 +53,7 @@ comments:
     category_id          : # Shown during giscus setup at https://giscus.app
     discussion_term      : # "pathname" (default), "url", "title", "og:title"
     reactions_enabled    : # '1' for enabled (default), '0' for disabled
-    theme                : preferred_color_scheme # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
+    theme                : "preferred_color_scheme" # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
     strict               : # 1 for enabled, 0 for disabled (default)
     input_position       : # "top", "bottom" # The comment input box will be placed above or below the comments
     emit_metadata        : # 1 for enabled, 0 for disabled (default) # https://github.com/giscus/giscus/blob/main/ADVANCED-USAGE.md#imetadatamessage
@@ -326,8 +326,29 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: true  # Enables sidebar on posts and pages
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
+      header:
+        overlay_image: /assets/images/banner-home.jpg
+        
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      header:
+        overlay_image: /assets/images/banner-home.jpg
+        
+  # Homepage
+  - scope:
+      path: "index.html"
+    values:
+      header:
+        overlay_image: /assets/images/banner-home.jpg
+
+# rebuild

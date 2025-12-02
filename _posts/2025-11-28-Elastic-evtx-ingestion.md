@@ -1,14 +1,16 @@
 ---
+layout: single
 title: "Elastic-evtx-ingestion using winlogbeat"
+header:
+  overlay_image: /assets/images/banner-home.jpg
+
 categories:
   - tutorial
 tags:
   - elastic
   - evtx
   - ELK
-link: https://github.com/uzaaz/elastic-evtx-ingestion
-header:
-  image: /assets/images/header-002.jpg
+
 ---
 
 ### 🚀 Project Overview
