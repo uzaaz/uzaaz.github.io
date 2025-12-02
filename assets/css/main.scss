@@ -8,14 +8,23 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-/* Custom: make header banner thin on all pages/posts */
+/* Ultra-thin hero banner */
+
+/* Remove extra vertical space */
 .page__hero {
-  min-height: 0;      /* no forced tall hero */
+  min-height: 0;
   padding-top: 0;
   padding-bottom: 0;
 }
 
+/* Limit the visible banner height */
+.page__hero-image {
+  max-height: 140px;     /* try 100–160px until it matches what you want */
+  overflow: hidden;
+}
+
+/* Tight inner padding for text over image */
 .page__hero--overlay .wrapper {
-  padding-top: 1.4rem;   /* lower = thinner, higher = thicker */
-  padding-bottom: 1.4rem;
+  padding-top: 1.0rem;
+  padding-bottom: 1.0rem;
 }
