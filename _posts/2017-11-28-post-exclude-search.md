@@ -1,9 +1,17 @@
 ---
-title:  "Exclude Post from Search Index"
+# title:  "Exclude Post from Search Index"
 search: false
 categories: 
   - Jekyll
 last_modified_at: 2018-02-19T08:06:00-05:00
+
+# This text appears on top of the image
+excerpt: "Exclude Post from Search Index"
+
+header:
+  overlay_image: /assets/images/header-002.jpg
+  overlay_filter: 0.4          # darken a bit; 0–1, higher = darker
+
 ---
 
 This post should not appear in the search index because it has the following YAML Front Matter:
