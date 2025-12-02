@@ -1,7 +1,7 @@
 ---
 layout: single
 header:
-  overlay_image: /assets/images/banner-002.jpg
+  overlay_image: /assets/images/banner-005.jpg
 last_modified_at: 2025-11-24T22:20:26-04:00
 categories:
   - tutorial
