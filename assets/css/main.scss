@@ -8,9 +8,4 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-/* Custom: make header banner thinner */
-.page__hero {
-  min-height: 220px;   /* adjust: 220–280 for thinner/thicker */
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
+
