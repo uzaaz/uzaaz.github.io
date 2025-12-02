@@ -2,7 +2,7 @@
 layout: single
 header:
   overlay_image: /assets/images/banner-004.jpg
-
+last_modified_at: 2025-11-24T22:20:26-04:00
 categories:
   - tutorial
 tags:
@@ -171,3 +171,5 @@ DELETE _data_stream/winlogbeat-*
 ```
 
 [link-repo]: https://github.com/uzaaz/elastic-evtx-ingestion
+
+---
