@@ -8,13 +8,17 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-/* Custom: make header banner look thinner without breaking layout */
-.page__hero--overlay .wrapper {
-  padding-top: 2.5rem;     /* reduce vertical padding */
-  padding-bottom: 2.5rem;  /* tweak these until you like the thickness */
+/* === Custom: thin hero banner like Jack Hacks === */
+
+/* Do not force a big hero box */
+.page__hero {
+  min-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-/* optional: let the hero auto-size to content, no forced min-height */
-.page__hero {
-  min-height: auto;
+/* Control the thickness with small padding inside */
+.page__hero--overlay .wrapper {
+  padding-top: 1.8rem;      /* lower = thinner, higher = thicker */
+  padding-bottom: 1.8rem;
 }
