@@ -1,6 +1,6 @@
 main:
   - title: "Quick-Start Guide"
-    url: /docs/quick-start-guide/
+    url: /quick-start-guide/
   - title: "Posts"
     url: /year-archive/
   - title: "Categories"
@@ -13,4 +13,6 @@ main:
     url: /collection-archive/
   - title: "External Link"
     url: https://google.com
+  - title: "About"
+    url: /about/
     target: _blank
