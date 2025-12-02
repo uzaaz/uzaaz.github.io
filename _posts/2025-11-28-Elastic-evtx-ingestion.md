@@ -2,7 +2,7 @@
 layout: single
 title: "Elastic-evtx-ingestion using winlogbeat"
 header:
-  image: /assets/images/banner-home.jpg
+  overlay_image: /assets/images/banner-home.jpg
 
 categories:
   - tutorial
