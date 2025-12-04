@@ -25,11 +25,15 @@ search: false
 
 h3.archive__subtitle {
   margin-top: 1em;
-  margin-bottom: 0.5em !important;
+  margin-bottom: 0.25em !important;
 }
 
-/* Reduce gap between "Recent posts" and first post */
-.archive .list__item:first-child {
+/* Force remove gap after Recent posts heading */
+.list__item {
   padding-top: 0 !important;
+  margin-top: 0.5em !important;
+}
+
+.archive__item-title {
   margin-top: 0 !important;
 }
