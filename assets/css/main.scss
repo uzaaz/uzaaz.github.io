@@ -8,6 +8,23 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
+/* Reduce masthead (top navigation) height */
+.masthead {
+  padding: 0.5em 1em !important;
+}
+
+.greedy-nav {
+  min-height: 2em !important;
+}
+
+.greedy-nav a {
+  padding: 0.5rem 1rem !important;
+}
+
+.site-title {
+  font-size: 1rem !important;
+}
+
 .page__hero--overlay {
   padding: 3em 0;
   margin-bottom: 0;
