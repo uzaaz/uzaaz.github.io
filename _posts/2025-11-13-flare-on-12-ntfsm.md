@@ -8,9 +8,10 @@ last_modified_at: 2025-11-24T22:20:26-04:00
 categories:
 ---
 
-# Flare-On 12: NTFSM - Solving a Finite State Machine with Binary Ninja
 
 As the dust settles on this year’s Flare-On challenge, I finally found some time time to sit down and write about one of the more interesting challenges from this year: Challenge 5 - NTFSM. This challenge stood out to me because it not only provided me with an excellent opportunity to refine my reverse engineering skills, but it also allowed me to dig into a specific execution technique used in binaries and malware.
+
+# Flare-On 12: NTFSM - Solving a Finite State Machine with Binary Ninja
 
 For those unfamiliar with [Flare-On](https://flare-on.com/), it's basically an annual CTF for reverse engineers hosted by Mandiant's (now Googles) [FLARE](https://cloud.google.com/security/flare) team. This years CTF had 9 stages of increasingly difficult challenges for single players to solve in sequence. Unfortunately for me, life got in the way and I only made it to Challenge 6 - but even with that, they were a blast.
 
