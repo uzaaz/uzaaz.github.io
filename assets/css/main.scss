@@ -17,3 +17,14 @@ search: false
   object-fit: cover;
   object-position: center;
 }
+
+/* Tighten space above and below 'Recent posts' */
+.page__content h3.archivesubtitle {
+  margin-top: 0.5rem;    /* was larger */
+  margin-bottom: 0.5rem; /* reduce gap under title */
+}
+
+/* Tighten space between subtitle and first post */
+.archive__item {
+  margin-top: 0.5rem;    /* lower this until gap disappears */
+}
