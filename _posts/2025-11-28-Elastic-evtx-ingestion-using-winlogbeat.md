@@ -20,11 +20,7 @@ tags:
 
 ---
 
-### 🚀 Project Overview
-
-Source files [Repository][link-repo].
-
-This project demonstrates a robust pipeline for ingesting and analyzing forensically collected Windows Event Log files (`.evtx`) into the Elastic Stack (Elasticsearch, Kibana) using **Winlogbeat**. This process is critical in digital forensics and security operations for efficient threat hunting and evidence review.
+🚀 **Project Overview**: This project demonstrates a robust pipeline for ingesting and analyzing forensically collected Windows Event Log files (`.evtx`) into the Elastic Stack (Elasticsearch, Kibana) using **Winlogbeat**. This process is critical in digital forensics and security operations for efficient threat hunting and evidence review.
 
 The pipeline is automated using a PowerShell script to iterate through multiple EVTX files, ensuring each file is treated as a new source for proper ingestion and analysis.
 
@@ -178,6 +174,7 @@ To clean Logs from elastic head to the Developper Tools an past the following li
 DELETE _data_stream/winlogbeat-*
 ```
 
+Source files [Repository][link-repo].
 [link-repo]: https://github.com/uzaaz/elastic-evtx-ingestion
 
 ---
