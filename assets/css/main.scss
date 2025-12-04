@@ -5,30 +5,15 @@ search: false
 
 @charset "utf-8";
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
-@import "minimal-mistakes";
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
 
 .page__hero {
-  max-height: 200px;
-  overflow: hidden;
+  max-height: 200px;   // control thickness
+  overflow: hidden;    // hide the rest of the image
 }
 
 .page__hero-image {
   object-fit: cover;
   object-position: center;
-}
-
-/* Fix the gap under Recent posts */
-.archive__item-excerpt {
-  margin-top: 0 !important;
-}
-
-.list__item:first-child {
-  padding-top: 0 !important;
-  margin-top: 0 !important;
-}
-
-.archive__item:first-of-type {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
 }
