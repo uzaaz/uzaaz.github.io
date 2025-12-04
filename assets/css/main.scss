@@ -8,24 +8,16 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+/* Control banner height */
 .page__hero {
-  max-height: 200px;   // control thickness
-  overflow: hidden;    // hide the rest of the image
+  max-height: 200px;
+  overflow: hidden;
+  margin-top: -2em;  /* Remove gap above banner */
 }
 
 .page__hero-image {
   object-fit: cover;
   object-position: center;
-}
-
----
----
-
-@import "minimal-mistakes";
-
-/* Remove gap above banner */
-.page__hero {
-  margin-top: -2em;
 }
 
 /* Remove gap below Recent Posts heading */
