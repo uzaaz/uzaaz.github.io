@@ -8,12 +8,9 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
-/* Control banner height */
 .page__hero {
-  max-height: 200px !important;
+  max-height: 200px;
   overflow: hidden;
-  margin-top: -3em !important;
-  margin-bottom: 0 !important;
 }
 
 .page__hero-image {
@@ -21,18 +18,19 @@ search: false
   object-position: center;
 }
 
-/* Remove all gaps in main content area */
-.initial-content {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
+/* Remove gap between banner and content */
+.page__hero--overlay {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }
 
-/* Remove spacing in archive/posts */
-.archive {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
+/* Remove gap between sections */
+.sidebar.sticky {
+  top: 0 !important;
+  margin-top: -3em !important;
 }
 
-.archive__item {
-  margin-bottom: 1em !important;
+/* Reduce Recent posts spacing */
+h3.archive__subtitle {
+  margin-bottom: 0.5em !important;
 }
