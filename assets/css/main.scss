@@ -18,19 +18,17 @@ search: false
   object-position: center;
 }
 
-/* Remove gap between banner and content */
-.page__hero--overlay {
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
+/* Fix the gap under Recent posts */
+.archive__item-excerpt {
+  margin-top: 0 !important;
 }
 
-/* Remove gap between sections */
-.sidebar.sticky {
-  top: 0 !important;
-  margin-top: -3em !important;
+.list__item:first-child {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
 }
 
-/* Reduce Recent posts spacing */
-h3.archive__subtitle {
-  margin-bottom: 0.5em !important;
+.archive__item:first-of-type {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
