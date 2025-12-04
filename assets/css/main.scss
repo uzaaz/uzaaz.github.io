@@ -18,13 +18,27 @@ search: false
   object-position: center;
 }
 
-/* Tighten space above and below 'Recent posts' */
-.page__content h3.archivesubtitle {
-  margin-top: 0.5rem;    /* was larger */
-  margin-bottom: 0.5rem; /* reduce gap under title */
+---
+---
+
+@import "minimal-mistakes";
+
+/* Remove gap above banner */
+.page__hero {
+  margin-top: -2em;
 }
 
-/* Tighten space between subtitle and first post */
-.archive__item {
-  margin-top: 0.5rem;    /* lower this until gap disappears */
+/* Remove gap below Recent Posts heading */
+.archive__item-title {
+  margin-bottom: 0.5em;
+}
+
+.list__item {
+  margin-bottom: 1em;
+}
+
+/* Reduce spacing in archives/posts list */
+.archive {
+  margin-top: 0;
+  padding-top: 0;
 }
