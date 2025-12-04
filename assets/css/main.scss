@@ -5,14 +5,15 @@ search: false
 
 @charset "utf-8";
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
 
 /* Control banner height */
 .page__hero {
-  max-height: 200px;
+  max-height: 200px !important;
   overflow: hidden;
-  margin-top: -2em;  /* Remove gap above banner */
+  margin-top: -3em !important;
+  margin-bottom: 0 !important;
 }
 
 .page__hero-image {
@@ -20,17 +21,18 @@ search: false
   object-position: center;
 }
 
-/* Remove gap below Recent Posts heading */
-.archive__item-title {
-  margin-bottom: 0.5em;
+/* Remove all gaps in main content area */
+.initial-content {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
-.list__item {
-  margin-bottom: 1em;
-}
-
-/* Reduce spacing in archives/posts list */
+/* Remove spacing in archive/posts */
 .archive {
-  margin-top: 0;
-  padding-top: 0;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.archive__item {
+  margin-bottom: 1em !important;
 }
