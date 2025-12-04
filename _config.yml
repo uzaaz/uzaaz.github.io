@@ -115,13 +115,13 @@ analytics:
 author:
   name             : "Hamza M."
   avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I read **logs** so attackers don’t write the ***story***."
+  bio              : "I read **logs** so attackers don’t write the **story**."
   location         : "Morocco"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:mgh.hamza@gmail.com"
+      # url: "mailto:mgh.hamza@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://uzaaz.github.io"
@@ -139,10 +139,10 @@ author:
       url: "https://github.com/uzaaz/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/hmz_mgh/"
+      # url: "https://instagram.com/hmz_mgh/"
     - label: "Youtube"
       icon: "fab fa-fw fa-youtube"
-      url: "https://youtube.com/@hexlogs"
+      # url: "https://youtube.com/@hexlogs"
 
 # Site Footer
 footer:
