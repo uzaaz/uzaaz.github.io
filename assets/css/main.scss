@@ -8,12 +8,37 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+/* --- Existing Custom Code (Banner Thickness) --- */
 .page__hero {
-  max-height: 200px;   // control thickness
-  overflow: hidden;    // hide the rest of the image
+  max-height: 200px;
+  overflow: hidden;
 }
 
 .page__hero-image {
   object-fit: cover;
   object-position: center;
+}
+
+/* [Inference] --- Custom Spacing Fixes for Home Page --- */
+
+/* 1. Reduce the big gap between the banner and the profile/post section */
+.page__content {
+  /* This reduces the padding (space) at the top of the main content area */
+  padding-top: 1em; 
+}
+
+/* 2. Reduce the gap around the "Recent posts" heading (h3) */
+/* This targets the 'Recent posts' title, making it closer to the content above and below it. */
+.page__content h3 {
+  /* Reduce space above the heading */
+  margin-top: 1.5em; 
+  /* Reduce space between the heading and the first post title */
+  margin-bottom: 0.5em;
+}
+
+/* 3. Reduce the vertical space between individual recent posts */
+/* The .archive__item is the container for each post snippet (title, date, excerpt). */
+.archive__item {
+  /* Reduce the space below each post item */
+  margin-bottom: 0.5em; 
 }
