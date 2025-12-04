@@ -19,16 +19,17 @@ search: false
   object-position: center;
 }
 
-/* [Inference] --- Custom Spacing Fixes for Home Page --- */
+/* [Inference] --- New Custom Spacing Fixes for Home Page (High Specificity) --- */
 
 /* 1. Reduce the big gap between the banner and the profile/post section */
-.page__content {
-  /* This reduces the padding (space) at the top of the main content area */
-  padding-top: 1em; 
+/* Target the specific column layout container for the homepage (called .sidebar) */
+.page__content .sidebar {
+  /* Reduce the top margin for the content that sits next to the profile/sidebar */
+  margin-top: 1em; /* Reduced from the default large value */
 }
 
 /* 2. Reduce the gap around the "Recent posts" heading (h3) */
-/* This targets the 'Recent posts' title, making it closer to the content above and below it. */
+/* The "Recent posts" heading is typically wrapped in the .page__content area */
 .page__content h3 {
   /* Reduce space above the heading */
   margin-top: 1.5em; 
@@ -37,8 +38,15 @@ search: false
 }
 
 /* 3. Reduce the vertical space between individual recent posts */
-/* The .archive__item is the container for each post snippet (title, date, excerpt). */
+/* The .archive__item is the container for each post snippet on the home page. */
 .archive__item {
-  /* Reduce the space below each post item */
-  margin-bottom: 0.5em; 
+  /* Use !important as a last resort to ensure this override works */
+  margin-bottom: 0.5em !important; 
+  padding-bottom: 0.5em !important; 
+}
+
+/* 4. Target the container holding the profile/author information */
+/* Reduce the bottom space under your profile box, which pushes the posts down */
+.page__content .sidebar {
+    padding-bottom: 0;
 }
