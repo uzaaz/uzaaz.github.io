@@ -5,25 +5,12 @@ search: false
 
 @charset "utf-8";
 
-/* [Inference] STEP 1: CUSTOM SASS VARIABLES */
-/* THESE MUST BE DEFINED *BEFORE* THE IMPORTS BELOW TO OVERRIDE THE THEME'S DEFAULTS */
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
 
-// 1. Controls the vertical spacing applied to main page content containers
-// This directly targets the large gap between the banner and the posts.
-$spacing-unit: 1.5rem; 
-
-// 2. Overrides header margins to reduce space around the "Recent posts" heading
-$margin-top: 1em;
-$margin-bottom: 0.5em; 
-
-
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
-
-/* --- Existing Custom Code (Banner Thickness) --- */
-.page__hero {
-  max-height: 200px;
-  overflow: hidden;
+.page__hero--overlay {
+  padding: 3em 0;
+  margin-bottom: 0;
 }
 
 .page__hero-image {
@@ -31,17 +18,12 @@ $margin-bottom: 0.5em;
   object-position: center;
 }
 
-/* [Inference] STEP 2: Specific CSS Overrides (Backup for elements not covered by variables) */
-
-/* Reduce the big gap between the banner and the profile/post section */
-.page__content .sidebar {
-  margin-top: 1em;
-  padding-bottom: 0;
+.page__content {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
-/* Reduce the vertical space between individual recent posts */
-.archive__item {
-  /* Using !important as a last resort to ensure this override works */
-  margin-bottom: 0.5em !important; 
-  padding-bottom: 0.5em !important; 
+h3.archive__subtitle {
+  margin-top: 1em;
+  margin-bottom: 0.5em !important;
 }
