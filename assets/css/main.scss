@@ -27,3 +27,9 @@ h3.archive__subtitle {
   margin-top: 1em;
   margin-bottom: 0.5em !important;
 }
+
+/* Reduce gap between "Recent posts" and first post */
+.archive .list__item:first-child {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
