@@ -26,31 +26,31 @@ The pipeline is automated using a PowerShell script to iterate through multiple 
 
 ### 🔑 Key Features
 
-- **Forensic Ingestion Configuration:** Custom `winlogbeat-forensic.yml` is configured to handle offline EVTX files, setting `no_more_events: stop` and `start_at: oldest`1.
+- **Forensic Ingestion Configuration:** Custom `winlogbeat-forensic.yml` is configured to handle offline EVTX files, setting `no_more_events: stop` and `start_at: oldest`.
 
-- **Batch Automation:** A PowerShell script (`ingest.ps1`) automates the ingestion of all `.evtx` files found within a specified evidence directory222.
+- **Batch Automation:** A PowerShell script (`ingest.ps1`) automates the ingestion of all `.evtx` files found within a specified evidence directory.
 
-- **Registry Nuking:** The batch script critically removes the local Winlogbeat registry data (`.\data`) before processing each file to force Winlogbeat to treat every EVTX file as a new log source3333.
+- **Registry Nuking:** The batch script critically removes the local Winlogbeat registry data (`.\data`) before processing each file to force Winlogbeat to treat every EVTX file as a new log source.
 
-- **Security Monitoring Setup:** Includes steps for installing **Sysmon** to generate enhanced endpoint telemetry for richer forensic data4444.
+- **Security Monitoring Setup:** Includes steps for installing **Sysmon** to generate enhanced endpoint telemetry for richer forensic data.
 
-- **Cloud Integration:** Configuration uses Elastic Cloud ID and API key for secure data upload5.
+- **Cloud Integration:** Configuration uses Elastic Cloud ID and API key for secure data upload.
 
 
 ### 🛠️ Technologies Used
 
 |**Category**|**Component**|**Description / Purpose**|
 |---|---|---|
-|**Ingestion**|**Winlogbeat (v8.15.3)**|The dedicated Elastic Beat for shipping Windows event logs6.|
+|**Ingestion**|**Winlogbeat (v8.15.3)**|The dedicated Elastic Beat for shipping Windows event logs.|
 |**Analysis**|**Elastic Stack (ELK)**|Elasticsearch for storage and Kibana for visualization (as seen in the screenshot).|
-|**Data Source**|**Sysmon**|Optional tool for generating detailed, high-fidelity security event data7.|
-|**Automation**|**PowerShell**|Used for the `ingest.ps1` batch script to manage file processing and cleanup8.|
+|**Data Source**|**Sysmon**|Optional tool for generating detailed, high-fidelity security event data.|
+|**Automation**|**PowerShell**|Used for the `ingest.ps1` batch script to manage file processing and cleanup.|
 
 ### 📖 Setup and Execution Guide
 
 #### Prerequisites
 
-1. **Download Winlogbeat:** Get the Windows executable9.
+1. **Download Winlogbeat:** Get the Windows executable.
 
 > `https://artifacts.elastic.co/downloads/beats/winlogbeat/winlogbeat-8.15.3-windows-x86_64.zip`
 
