@@ -10,19 +10,20 @@ search: false
 
 /* Reduce masthead (top navigation) height */
 .masthead {
-  padding: 0.5em 1em !important;
+  padding: 0.25em 1em !important;
 }
 
 .greedy-nav {
-  min-height: 2em !important;
+  min-height: 1.5em !important;
 }
 
 .greedy-nav a {
-  padding: 0.5rem 1rem !important;
+  padding: 0.25rem 0.75rem !important;
+  font-size: 0.9em !important;
 }
 
 .site-title {
-  font-size: 1rem !important;
+  font-size: 0.9rem !important;
 }
 
 .page__hero--overlay {
