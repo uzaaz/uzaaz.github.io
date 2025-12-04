@@ -11,7 +11,7 @@ header:
   
 ---
 
-This post should not appear in the search index because it uses specific YAML Front Matter settings to explicitly disable search indexing for this page.
+This post should not appear in the search index because it uses specific YAML Front Matter settings to explicitly disable search indexing for this page in this example right in here.
 
 ```yaml
 search: false
