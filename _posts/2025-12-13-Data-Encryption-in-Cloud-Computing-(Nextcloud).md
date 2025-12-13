@@ -383,7 +383,6 @@ sudo -u apache php occ app:list | grep end_to_end
 
 
 ---
-<!-- break-list -->
 ## Notes:
 
 ##### Why “log out and log back in” after enabling encryption? (P.II - Q.3)
