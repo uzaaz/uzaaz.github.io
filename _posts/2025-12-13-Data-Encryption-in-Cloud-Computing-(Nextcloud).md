@@ -188,7 +188,7 @@ sudo systemctl restart httpd
 
 #### 5.2) Setup error (data directory)
 
-![[/assets/images/nextcloud002.png]]
+<p align="center"><a href="/assets/images/nextcloud002.png"><img src="/assets/images/nextcloud002.png"></a></p>
 
 Create the data directory and set permissions:
 ```sh
@@ -387,7 +387,8 @@ sudo -u apache php occ app:list | grep end_to_end
 
 ##### Why “log out and log back in” after enabling encryption? (P.II - Q.3)
 When encryption features are enabled, Nextcloud may require a fresh session so user encryption keys/context are initialized and applied consistently for uploads and key management.
-![[/assets/images/nextcloud003.png]]
+
+<p align="center"><a href="/assets/images/nextcloud003.png"><img src="/assets/images/nextcloud003.png"></a></p>
 
 ##### Checking encryption keys on the server (P.II - Q.5)
 ```sh
