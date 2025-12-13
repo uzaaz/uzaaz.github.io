@@ -1,10 +1,5 @@
 ---
 layout: single
-
-title: "Nextcloud Encryption Lab (CentOS Stream 9)"
-excerpt: "Deploy Nextcloud with Apache/MariaDB/PHP, enable HTTPS, troubleshoot permissions/SELinux, and compare server-side, client-side (GPG), and end-to-end encryption."
-description: "Hands-on lab for installing and securing Nextcloud on CentOS Stream 9 and validating multiple encryption models with practical verification steps."
-
 header:
   overlay_image: /assets/images/banner-005.jpg
   overlay_filter: 0.6
@@ -356,8 +351,7 @@ sudo -u apache php occ app:list | grep end_to_end
 
 
 ---
-<!-- break-list -->
-## Part II — Server-Side Encryption (Nextcloud)
+## Part II — Server-Side Encryption (Nextcloud) {#part-ii}
 
 1. Enable the **Default Encryption Module** app in Nextcloud.
 2. Go to **Administration → Security** and enable **Server-side encryption**.
@@ -367,7 +361,6 @@ sudo -u apache php occ app:list | grep end_to_end
 6. Download the file via Nextcloud and confirm it becomes readable on the client side.
 
 ---
-<!-- break-list -->
 ## Part III — Client-Side Encryption (GPG before upload)
 
 1. Install **Nextcloud Desktop** client.
@@ -377,7 +370,6 @@ sudo -u apache php occ app:list | grep end_to_end
 5. Verify the server admin cannot read the stored file (it remains encrypted at rest).
 
 ---
-<!-- break-list -->
 ## Part IV — End-to-End Encryption (E2EE)
 
 1. Enable the **End-to-End Encryption** application.
@@ -403,7 +395,6 @@ find . -name "*.key" -o -name "*.privateKey"
 
 
 ---
-<!-- break-list -->
 ## Sources & References 📚🔗
 
 The following resources were used as primary references for installation, configuration, and encryption concepts covered in this lab:
