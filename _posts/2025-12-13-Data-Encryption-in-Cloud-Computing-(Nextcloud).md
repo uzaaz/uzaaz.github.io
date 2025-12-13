@@ -355,6 +355,8 @@ sudo -u apache php occ app:list | grep end_to_end
 ```
 
 
+---
+<!-- break-list -->
 ## Part II — Server-Side Encryption (Nextcloud)
 
 1. Enable the **Default Encryption Module** app in Nextcloud.
@@ -364,7 +366,8 @@ sudo -u apache php occ app:list | grep end_to_end
 5. Verify the presence of encryption keys.
 6. Download the file via Nextcloud and confirm it becomes readable on the client side.
 
-
+---
+<!-- break-list -->
 ## Part III — Client-Side Encryption (GPG before upload)
 
 1. Install **Nextcloud Desktop** client.
@@ -373,7 +376,8 @@ sudo -u apache php occ app:list | grep end_to_end
 4. Upload the encrypted file (e.g., `client.txt.gpg`) to Nextcloud.
 5. Verify the server admin cannot read the stored file (it remains encrypted at rest).
 
-
+---
+<!-- break-list -->
 ## Part IV — End-to-End Encryption (E2EE)
 
 1. Enable the **End-to-End Encryption** application.
@@ -382,6 +386,8 @@ sudo -u apache php occ app:list | grep end_to_end
 4. Verify directly on the server that the file is unreadable (encrypted).
 
 
+---
+<!-- break-list -->
 ## Notes:
 
 ##### Why “log out and log back in” after enabling encryption? (P.II - Q.3)
@@ -396,6 +402,8 @@ find . -name "*.key" -o -name "*.privateKey"
 ```
 
 
+---
+<!-- break-list -->
 ## Sources & References 📚🔗
 
 The following resources were used as primary references for installation, configuration, and encryption concepts covered in this lab:
