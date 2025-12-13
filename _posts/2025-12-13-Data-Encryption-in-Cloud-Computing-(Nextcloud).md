@@ -319,7 +319,6 @@ Uncomment and set:
 ServerName IP_SERVER:80
 ```
 
----
 ### 7) (For Part IV) Install/Enable End-to-End Encryption App
 
 If the app does not appear in the Nextcloud UI for your version, install it manually (SSH) and enable it via `occ`.
@@ -351,8 +350,6 @@ sudo -u apache php occ app:list | grep end_to_end
 ```
 
 
----
-
 ## Part II — Server-Side Encryption (Nextcloud)
 
 ##### 1. Enable the **Default Encryption Module** app in Nextcloud.
@@ -362,7 +359,6 @@ sudo -u apache php occ app:list | grep end_to_end
 ##### 5. Verify the presence of encryption keys.
 ##### 6. Download the file via Nextcloud and confirm it becomes readable on the client side.
 
----
 
 ## Part III — Client-Side Encryption (GPG before upload)
 
@@ -372,7 +368,6 @@ sudo -u apache php occ app:list | grep end_to_end
 ##### 4. Upload the encrypted file (e.g., `client.txt.gpg`) to Nextcloud.
 ##### 5. Verify the server admin cannot read the stored file (it remains encrypted at rest).
 
----
 
 ## Part IV — End-to-End Encryption (E2EE)
 
@@ -382,7 +377,6 @@ sudo -u apache php occ app:list | grep end_to_end
 ##### 4. Verify directly on the server that the file is unreadable (encrypted).
 
 
----
 ## Notes:
 
 ### Why “log out and log back in” after enabling encryption? (P.II - Q.3)
@@ -397,7 +391,6 @@ find . -name "*.key" -o -name "*.privateKey"
 ```
 
 
----
 ## Sources & References 📚🔗
 
 The following resources were used as primary references for installation, configuration, and encryption concepts covered in this lab:
@@ -423,7 +416,6 @@ The following resources were used as primary references for installation, config
 - **Server-side encryption walkthrough (community article)** — practical overview (non-official)  
   [TechRepublic — Enable server-side encryption in Nextcloud][tr-sse]
 
----
 
 [nc-install]: https://docs.nextcloud.com/server/latest/admin_manual/installation/source_installation.html
 [nc-encryption-details]: https://docs.nextcloud.com/server/latest/admin_manual/configuration_files/encryption_details.html
