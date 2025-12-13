@@ -355,42 +355,42 @@ sudo -u apache php occ app:list | grep end_to_end
 
 ## Part II — Server-Side Encryption (Nextcloud)
 
-1. Enable the **Default Encryption Module** app in Nextcloud.
-2. Go to **Administration → Security** and enable **Server-side encryption**.
-3. Log out and log back in with a user, then upload a file (e.g., `server.txt`).
-4. On the server filesystem, verify the stored file is not readable in clear text.
-5. Verify the presence of encryption keys.
-6. Download the file via Nextcloud and confirm it becomes readable on the client side.
+##### 1. Enable the **Default Encryption Module** app in Nextcloud.
+##### 2. Go to **Administration → Security** and enable **Server-side encryption**.
+##### 3. Log out and log back in with a user, then upload a file (e.g., `server.txt`).
+##### 4. On the server filesystem, verify the stored file is not readable in clear text.
+##### 5. Verify the presence of encryption keys.
+##### 6. Download the file via Nextcloud and confirm it becomes readable on the client side.
 
 ---
 
 ## Part III — Client-Side Encryption (GPG before upload)
 
-1. Install **Nextcloud Desktop** client.
-2. Connect the client to the Nextcloud server.
-3. Encrypt a local file using **GPG**.
-4. Upload the encrypted file (e.g., `client.txt.gpg`) to Nextcloud.
-5. Verify the server admin cannot read the stored file (it remains encrypted at rest).
+##### 1. Install **Nextcloud Desktop** client.
+##### 2. Connect the client to the Nextcloud server.
+##### 3. Encrypt a local file using **GPG**.
+##### 4. Upload the encrypted file (e.g., `client.txt.gpg`) to Nextcloud.
+##### 5. Verify the server admin cannot read the stored file (it remains encrypted at rest).
 
 ---
 
 ## Part IV — End-to-End Encryption (E2EE)
 
-1. Enable the **End-to-End Encryption** application.
-2. From a Nextcloud Desktop/Mobile client, create a protected (E2EE) folder.
-3. Add a file (e.g., `e2e.txt`) into that protected folder.
-4. Verify directly on the server that the file is unreadable (encrypted).
+##### 1. Enable the **End-to-End Encryption** application.
+##### 2. From a Nextcloud Desktop/Mobile client, create a protected (E2EE) folder.
+##### 3. Add a file (e.g., `e2e.txt`) into that protected folder.
+##### 4. Verify directly on the server that the file is unreadable (encrypted).
 
 
 ---
 ## Notes:
 
-##### Why “log out and log back in” after enabling encryption? (P.II - Q.3)
+### Why “log out and log back in” after enabling encryption? (P.II - Q.3)
 When encryption features are enabled, Nextcloud may require a fresh session so user encryption keys/context are initialized and applied consistently for uploads and key management.
 
 <p align="center"><a href="/assets/images/nextcloud003.png"><img src="/assets/images/nextcloud003.png"></a></p>
 
-##### Checking encryption keys on the server (P.II - Q.5)
+### Checking encryption keys on the server (P.II - Q.5)
 ```sh
 cd /var/www/html/nextcloud/data
 find . -name "*.key" -o -name "*.privateKey"
@@ -402,7 +402,7 @@ find . -name "*.key" -o -name "*.privateKey"
 
 The following resources were used as primary references for installation, configuration, and encryption concepts covered in this lab:
 
-**Official Nextcloud documentation ✅**
+### **Official Nextcloud documentation ✅**
 - **Installation on Linux (Admin Manual)** — requirements, recommended layouts, and deployment guidance  
   [Nextcloud Docs — Installation on Linux][nc-install]
 
@@ -419,7 +419,7 @@ The following resources were used as primary references for installation, config
 - **E2EE App source code (GitHub)** — manual installation, version checks, issues, and troubleshooting  
   [GitHub — nextcloud/end_to_end_encryption][nc-e2ee-github]
 
-**Extra reading (optional) 🧠**
+### **Extra reading (optional) 🧠**
 - **Server-side encryption walkthrough (community article)** — practical overview (non-official)  
   [TechRepublic — Enable server-side encryption in Nextcloud][tr-sse]
 
