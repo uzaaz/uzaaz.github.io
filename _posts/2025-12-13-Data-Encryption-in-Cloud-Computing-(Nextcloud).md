@@ -170,7 +170,7 @@ These errors typically occur because Apache (user `apache` on CentOS) cannot w
 
 #### 5.1) Setup/Login page error (config directory)
 
-![[/assets/images/nextcloud001.png]]
+<p align="center"><a href="/assets/images/nextcloud001.png"><img src="/assets/images/nextcloud001.png"></a></p>
 
 Fix permissions:
 ```sh
