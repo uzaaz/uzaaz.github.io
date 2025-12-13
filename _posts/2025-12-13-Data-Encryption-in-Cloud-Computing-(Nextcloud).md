@@ -384,7 +384,6 @@ sudo -u apache php occ app:list | grep end_to_end
 
 
 ---
-
 ## Notes:
 
 ##### Why “log out and log back in” after enabling encryption? (P.II - Q.3)
@@ -399,13 +398,11 @@ find . -name "*.key" -o -name "*.privateKey"
 ```
 
 ---
----
-
 ## Sources & References 📚🔗
 
 The following resources were used as primary references for installation, configuration, and encryption concepts covered in this lab:
 
-### Official Nextcloud documentation ✅
+**Official Nextcloud documentation ✅**
 - **Installation on Linux (Admin Manual)** — requirements, recommended layouts, and deployment guidance  
   [Nextcloud Docs — Installation on Linux][nc-install]
 
@@ -415,14 +412,14 @@ The following resources were used as primary references for installation, config
 - **Encryption configuration (Admin Manual)** — configuration options and operational notes  
   [Nextcloud Docs — Encryption configuration][nc-encryption-config]
 
-### End-to-End Encryption (E2EE) 🔐
+**End-to-End Encryption (E2EE) 🔐**
 - **E2EE App (Nextcloud App Store)** — app overview and ecosystem reference  
   [Nextcloud App Store — End-to-End Encryption][nc-e2ee-appstore]
 
 - **E2EE App source code (GitHub)** — manual installation, version checks, issues, and troubleshooting  
   [GitHub — nextcloud/end_to_end_encryption][nc-e2ee-github]
 
-### Extra reading (optional) 🧠
+**Extra reading (optional) 🧠**
 - **Server-side encryption walkthrough (community article)** — practical overview (non-official)  
   [TechRepublic — Enable server-side encryption in Nextcloud][tr-sse]
 
