@@ -34,11 +34,7 @@ tags:
   - centos
   - selinux
 ---
-
-**Date:** 2025-10-30  
 **Course:** Cloud Computing Security  
-**Instructor:** Pr. Samia EL HADDOUTI
-
 ---
 This project is a hands-on lab for deploying and securing a self-hosted **Nextcloud** instance on CentOS Stream 9 using Apache, MariaDB, and PHP. It walks through installation, configuration, enabling HTTPS with a self-signed certificate, and practical troubleshooting steps (permissions and SELinux contexts) that commonly break Nextcloud setups in real environments. ⚙️🔧
 
