@@ -257,7 +257,8 @@ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
 ```
 
 ##### Entering certificate request details:
-![[/assets/images/ssl001.png]]
+
+<p align="center"><a href="/assets/images/ssl001.png"><img src="/assets/images/ssl001.png"></a></p>
 
 Update `/etc/httpd/conf.d/nextcloud.conf` to redirect HTTP to HTTPS and enable SSL:
 ```http
@@ -309,7 +310,8 @@ sudo apachectl configtest
 ```
 
 #### Optional: Fix “ServerName” warning cleanly
-![[/assets/images/server001.png]]
+
+<p align="center"><a href="/assets/images/server001.png"><img src="/assets/images/server001.png"></a></p>
 
 Edit Apache main config:
 ```sh
