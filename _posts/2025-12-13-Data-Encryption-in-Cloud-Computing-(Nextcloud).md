@@ -321,7 +321,8 @@ Uncomment and set:
 ServerName IP_SERVER:80
 ```
 
-### 7) (For Part IV) Install/Enable End-to-End Encryption App
+<br>
+### 7) Install/Enable End-to-End Encryption App (For Part IV)
 
 If the app does not appear in the Nextcloud UI for your version, install it manually (SSH) and enable it via `occ`.
 
