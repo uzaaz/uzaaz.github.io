@@ -31,7 +31,7 @@ tags:
   - selinux
 ---
 
-# **Course:** Cloud Computing Security  
+## Course: Cloud Computing Security  
 <br>
 
 This project is a hands-on lab for deploying and securing a self-hosted **Nextcloud** instance on CentOS Stream 9 using Apache, MariaDB, and PHP. It walks through installation, configuration, enabling HTTPS with a self-signed certificate, and practical troubleshooting steps (permissions and SELinux contexts) that commonly break Nextcloud setups in real environments. ⚙️🔧
@@ -41,12 +41,12 @@ It then explores and compares three data-protection approaches in a cloud-storag
 ## Objective
 Practice and compare Nextcloud encryption models—server-side encryption, client-side encryption (GPG before upload), and end-to-end encryption—by verifying what is readable on the server versus on the client.
 
-<br>
+
 ## Part I - Install and Configure Nextcloud (CentOS Stream 9)
 > **Target platform:** CentOS Stream 9 server  
 > **Service stack:** Apache + MariaDB + PHP + Nextcloud
 
-<br>
+
 ### 1) Install Apache (httpd)
 Update the system and install Apache:
 
@@ -69,7 +69,7 @@ sudo firewall-cmd --add-service=https --permanent
 sudo firewall-cmd --reload
 ```
 
-<br>
+
 ### 2) Install and Configure MariaDB
 
 Install and start MariaDB:
@@ -98,7 +98,7 @@ FLUSH PRIVILEGES;
 EXIT;
 ```
 
-<br>
+
 ### 3) Install PHP 8.2 and Required Extensions
 
 Enable Remi repository and install PHP + extensions:
@@ -115,7 +115,7 @@ sudo dnf install -y \
 sudo systemctl restart httpd
 ```
 
-<br>
+
 ### 4) Install and Configure Nextcloud
 
 Download and extract Nextcloud:
@@ -162,7 +162,7 @@ Then:
 - Open Nextcloud in your browser
 - Create the administrator account
 
-<br>
+
 ### 5) Common Nextcloud Setup Errors (Permissions)
 These errors typically occur because Apache (user `apache` on CentOS) cannot write to required Nextcloud directories.
 
@@ -321,7 +321,7 @@ Uncomment and set:
 ServerName IP_SERVER:80
 ```
 
-<br>
+
 ### 7) Install/Enable End-to-End Encryption App (For Part IV)
 
 If the app does not appear in the Nextcloud UI for your version, install it manually (SSH) and enable it via `occ`.
@@ -378,7 +378,7 @@ sudo -u apache php occ app:list | grep end_to_end
  4. Verify directly on the server that the file is unreadable (encrypted).
 
 
-## Notes:
+## Notes
 
 ### Why “log out and log back in” after enabling encryption? (P.II - Q.3)
 When encryption features are enabled, Nextcloud may require a fresh session so user encryption keys/context are initialized and applied consistently for uploads and key management.
