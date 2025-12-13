@@ -6,7 +6,7 @@ header:
 #  classes: wide
 
 toc: true
-toc_depth: 3
+toc_depth: 6
 toc_label: "Table of Contents"
 # toc_icon: "cog"
 
@@ -352,10 +352,7 @@ Verify if it's enabled:
 sudo -u apache php occ app:list | grep end_to_end
 ```
 
-<br>
-# Questions:
 
-<br>
 ## Part II - Server-Side Encryption (Nextcloud)
 
  1. Enable the **Default Encryption Module** app in Nextcloud.
@@ -365,7 +362,6 @@ sudo -u apache php occ app:list | grep end_to_end
  5. Verify the presence of encryption keys.
  6. Download the file via Nextcloud and confirm it becomes readable on the client side.
 
-<br>
 ## Part III - Client-Side Encryption (GPG before upload)
 
  1. Install **Nextcloud Desktop** client.
@@ -374,7 +370,6 @@ sudo -u apache php occ app:list | grep end_to_end
  4. Upload the encrypted file (e.g., `client.txt.gpg`) to Nextcloud.
  5. Verify the server admin cannot read the stored file (it remains encrypted at rest).
 
-<br>
 ## Part IV - End-to-End Encryption (E2EE)
 
  1. Enable the **End-to-End Encryption** application.
@@ -383,7 +378,6 @@ sudo -u apache php occ app:list | grep end_to_end
  4. Verify directly on the server that the file is unreadable (encrypted).
 
 
-<br>
 ## Notes:
 
 ### Why “log out and log back in” after enabling encryption? (P.II - Q.3)
@@ -397,12 +391,11 @@ cd /var/www/html/nextcloud/data
 find . -name "*.key" -o -name "*.privateKey"
 ```
 
-<br>
-## Sources & References 📚🔗
+## Sources & References
 
 The following resources were used as primary references for installation, configuration, and encryption concepts covered in this lab:
 
-### **Official Nextcloud documentation ✅**
+### **Official Nextcloud documentation**
 - **Installation on Linux (Admin Manual)** — requirements, recommended layouts, and deployment guidance  
   [Nextcloud Docs — Installation on Linux][nc-install]
 
@@ -412,14 +405,14 @@ The following resources were used as primary references for installation, config
 - **Encryption configuration (Admin Manual)** — configuration options and operational notes  
   [Nextcloud Docs — Encryption configuration][nc-encryption-config]
 
-**End-to-End Encryption (E2EE) 🔐**
+**End-to-End Encryption (E2EE)**
 - **E2EE App (Nextcloud App Store)** — app overview and ecosystem reference  
   [Nextcloud App Store — End-to-End Encryption][nc-e2ee-appstore]
 
 - **E2EE App source code (GitHub)** — manual installation, version checks, issues, and troubleshooting  
   [GitHub — nextcloud/end_to_end_encryption][nc-e2ee-github]
 
-### **Extra reading (optional) 🧠**
+### **Extra reading (optional)**
 - **Server-side encryption walkthrough (community article)** — practical overview (non-official)  
   [TechRepublic — Enable server-side encryption in Nextcloud][tr-sse]
 
