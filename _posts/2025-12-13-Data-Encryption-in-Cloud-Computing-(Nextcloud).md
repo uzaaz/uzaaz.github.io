@@ -353,7 +353,7 @@ sudo -u apache php occ app:list | grep end_to_end
 
 ---
 
-## Part II — Server-Side Encryption (Nextcloud) {#part-ii}
+## Part II — Server-Side Encryption (Nextcloud)
 
 1. Enable the **Default Encryption Module** app in Nextcloud.
 2. Go to **Administration → Security** and enable **Server-side encryption**.
