@@ -349,32 +349,33 @@ Verify if it's enabled:
 sudo -u apache php occ app:list | grep end_to_end
 ```
 
+# Questions:
 
 ## Part II — Server-Side Encryption (Nextcloud)
 
-##### 1. Enable the **Default Encryption Module** app in Nextcloud.
-##### 2. Go to **Administration → Security** and enable **Server-side encryption**.
-##### 3. Log out and log back in with a user, then upload a file (e.g., `server.txt`).
-##### 4. On the server filesystem, verify the stored file is not readable in clear text.
-##### 5. Verify the presence of encryption keys.
-##### 6. Download the file via Nextcloud and confirm it becomes readable on the client side.
+ 1. Enable the **Default Encryption Module** app in Nextcloud.
+ 2. Go to **Administration → Security** and enable **Server-side encryption**.
+ 3. Log out and log back in with a user, then upload a file (e.g., `server.txt`).
+ 4. On the server filesystem, verify the stored file is not readable in clear text.
+ 5. Verify the presence of encryption keys.
+ 6. Download the file via Nextcloud and confirm it becomes readable on the client side.
 
 
 ## Part III — Client-Side Encryption (GPG before upload)
 
-##### 1. Install **Nextcloud Desktop** client.
-##### 2. Connect the client to the Nextcloud server.
-##### 3. Encrypt a local file using **GPG**.
-##### 4. Upload the encrypted file (e.g., `client.txt.gpg`) to Nextcloud.
-##### 5. Verify the server admin cannot read the stored file (it remains encrypted at rest).
+ 1. Install **Nextcloud Desktop** client.
+ 2. Connect the client to the Nextcloud server.
+ 3. Encrypt a local file using **GPG**.
+ 4. Upload the encrypted file (e.g., `client.txt.gpg`) to Nextcloud.
+ 5. Verify the server admin cannot read the stored file (it remains encrypted at rest).
 
 
 ## Part IV — End-to-End Encryption (E2EE)
 
-##### 1. Enable the **End-to-End Encryption** application.
-##### 2. From a Nextcloud Desktop/Mobile client, create a protected (E2EE) folder.
-##### 3. Add a file (e.g., `e2e.txt`) into that protected folder.
-##### 4. Verify directly on the server that the file is unreadable (encrypted).
+ 1. Enable the **End-to-End Encryption** application.
+ 2. From a Nextcloud Desktop/Mobile client, create a protected (E2EE) folder.
+ 3. Add a file (e.g., `e2e.txt`) into that protected folder.
+ 4. Verify directly on the server that the file is unreadable (encrypted).
 
 
 ## Notes:
