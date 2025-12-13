@@ -412,15 +412,10 @@ The following resources were used as primary references for installation, config
 - **E2EE App source code (GitHub)** — manual installation, version checks, issues, and troubleshooting  
   [GitHub — nextcloud/end_to_end_encryption][nc-e2ee-github]
 
-### **Extra reading (optional)**
-- **Server-side encryption walkthrough (community article)** — practical overview (non-official)  
-  [TechRepublic — Enable server-side encryption in Nextcloud][tr-sse]
-
 
 [nc-install]: https://docs.nextcloud.com/server/latest/admin_manual/installation/source_installation.html
 [nc-encryption-details]: https://docs.nextcloud.com/server/latest/admin_manual/configuration_files/encryption_details.html
 [nc-encryption-config]: https://docs.nextcloud.com/server/latest/admin_manual/configuration_files/encryption_configuration.html
 [nc-e2ee-appstore]: https://apps.nextcloud.com/apps/end_to_end_encryption
 [nc-e2ee-github]: https://github.com/nextcloud/end_to_end_encryption
-[tr-sse]: https://www.techrepublic.com/article/how-to-enable-server-side-encryption-in-nextcloud/
 <br>
