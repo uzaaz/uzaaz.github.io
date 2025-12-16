@@ -42,7 +42,7 @@ My setup includes:
 - Kali Linux (client) and Metasploitable2 (server) running as VMware VMs for SSH and Telnet testing.
 - Windows Server 2019 used to host FTP and HTTP services.
 
-<p align="center"><a href="wireshark001.png"><img src="wireshark001.png"></a></p>
+<p align="center"><a href="/assets/images/wireshark001.png"><img src="/assets/images/wireshark001.png"></a></p>
 
 ### Addressing (bridged mode)
 I switched VMware networking to **Bridged mode**, so every VM received an IP address from the same LAN/DHCP as the host. In my capture results, the key IPs were:
@@ -58,7 +58,7 @@ Note: if someone reproduces this lab, these IPs may differ depending on the loca
 ## Choosing the right capture interface (Windows)
 On Windows, selecting the correct Wireshark interface is critical. Since my VMs were bridged, I captured on the **Wi‑Fi** interface of the Windows 11 host (the physical interface connected to the LAN). After starting capture, I generated traffic (Telnet/SSH/FTP/HTTP) and confirmed packets appeared on that interface.
 
-<p align="center"><a href="wireshark002.png"><img src="wireshark002.png"></a></p>
+<p align="center"><a href="/assets/images/wireshark002.png"><img src="/assets/images/wireshark002.png"></a></p>
 
 ---
 
@@ -99,7 +99,7 @@ I logged in and ran a few commands to generate clear application traffic:
 - `ls`
 - `whoami`
 
-<p align="center"><a href="wireshark004.png"><img src="wireshark004.png"></a></p>
+<p align="center"><a href="/assets/images/wireshark004.png"><img src="/assets/images/wireshark004.png"></a></p>
 
 ### What I observed in Wireshark
 After stopping the capture, I filtered on Telnet traffic and inspected packets between:
@@ -112,19 +112,13 @@ The Telnet payload contained readable text (server banner, prompts, and user inp
 
 This reconstructed the full conversation and revealed the login exchange and commands in cleartext, demonstrating that Telnet offers no confidentiality on the network.
 
-![[wireshark010.png]]
-![[wireshark011.png]]
-![[wireshark012.png]]
-![[wireshark013.png]]
 <figure class="half">
     <a href="/assets/images/wireshark010.png"><img src="/assets/images/wireshark010.png"></a>
     <a href="/assets/images/wireshark011.png"><img src="/assets/images/wireshark011.png"></a>
-    <figcaption>Caption describing these two images.</figcaption>
 </figure>
 <figure class="half">
     <a href="/assets/images/wireshark012.png"><img src="/assets/images/wireshark012.png"></a>
     <a href="/assets/images/wireshark013.png"><img src="/assets/images/wireshark013.png"></a>
-    <figcaption>Caption describing these two images.</figcaption>
 </figure>
 
 
@@ -140,7 +134,7 @@ Using PuTTY again, I initiated an SSH session to the same host:
 - Target: `192.168.1.210`
 - Port: `22`
 
-<p align="center"><a href="wireshark015.png"><img src="wireshark015.png"></a></p>
+<p align="center"><a href="/assets/images/wireshark015.png"><img src="/assets/images/wireshark015.png"></a></p>
 
 ### What I observed in Wireshark
 When filtering on SSH traffic, I could see:
@@ -149,7 +143,7 @@ When filtering on SSH traffic, I could see:
 
 However, unlike Telnet, the actual credentials and commands were not readable in the packet payload. The data after negotiation appeared as encrypted binary content, which is the expected and desired behavior of SSH.
 
-<p align="center"><a href="wireshark016.png"><img src="wireshark016.png"></a></p>
+<p align="center"><a href="/assets/images/wireshark016.png"><img src="/assets/images/wireshark016.png"></a></p>
 
 ### Security takeaway
 SSH still produces network artifacts (IPs, ports, timings, handshake metadata), but it protects the confidentiality of what matters most: authentication material and interactive commands.
@@ -166,7 +160,7 @@ I connected to my Windows Server 2019 FTP service:
 
 [IMAGE PLACEHOLDER: FTP client configuration showing server 192.168.1.214 and port 21]
 
-<p align="center"><a href="wireshark017.png"><img src="wireshark017.png"></a></p>
+<p align="center"><a href="/assets/images/wireshark017.png"><img src="/assets/images/wireshark017.png"></a></p>
 
 ### What I observed in Wireshark
 After applying the FTP filter, the control-channel conversation showed common FTP responses and commands. Most importantly, the capture clearly displayed the authentication sequence:
@@ -176,7 +170,7 @@ After applying the FTP filter, the control-channel conversation showed common FT
 
 This confirms a key security issue: classic FTP transmits authentication details in cleartext unless upgraded to a protected variant (FTPS) or replaced by SFTP.
 
-<p align="center"><a href="wireshark018.png"><img src="wireshark018.png"></a></p>
+<p align="center"><a href="/assets/images/wireshark018.png"><img src="/assets/images/wireshark018.png"></a></p>
 
 ### Security takeaway
 FTP should not be used for authentication or file transfer over untrusted networks because credentials can be captured. Prefer SFTP or FTPS depending on environment and requirements.
@@ -189,7 +183,7 @@ FTP should not be used for authentication or file transfer over untrusted networ
 From the Windows 11 host, I browsed to an HTTP resource hosted on Windows Server 2019:
 - URL tested: `http://192.168.1.214/image.jpg`
 
-<p align="center"><a href="wireshark019.png"><img src="wireshark019.png"></a></p>
+<p align="center"><a href="/assets/images/wireshark019.png"><img src="/assets/images/wireshark019.png"></a></p>
 
 ### What I observed in Wireshark
 Filtering for HTTP showed the request clearly, including the resource path:
@@ -201,13 +195,11 @@ Since this was plain HTTP (not HTTPS), the request metadata was visible in clear
 <figure class="half">
     <a href="/assets/images/wireshark021.png"><img src="/assets/images/wireshark021.png"></a>
     <a href="/assets/images/wireshark022.png"><img src="/assets/images/wireshark022.png"></a>
-    <figcaption>Caption describing these two images.</figcaption>
 </figure>
 
 <figure class="half">
     <a href="/assets/images/wireshark023.png"><img src="/assets/images/wireshark023.png"></a>
     <a href="/assets/images/wireshark024.png"><img src="/assets/images/wireshark024.png"></a>
-    <figcaption>Caption describing these two images.</figcaption>
 </figure>
 
 
