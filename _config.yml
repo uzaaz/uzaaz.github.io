@@ -98,7 +98,7 @@ facebook:
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
+# - https://developers..com/structured-data/customize/social-profiles
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
@@ -106,10 +106,10 @@ social:
 
 # Analytics
 analytics:
-  provider               : # false (default), "google", "google-universal", "google-gtag", "custom"
-  google:
-    tracking_id          :
-    anonymize_ip         : # true, false (default)
+  provider             : "google-gtag" # false (default), "", "google-universal", "google-gtag", "custom"
+google:
+  tracking_id          : "G-HKCHVDX2EV"
+  anonymize_ip         : false # true, false (default)
 
 
 # Site Author
