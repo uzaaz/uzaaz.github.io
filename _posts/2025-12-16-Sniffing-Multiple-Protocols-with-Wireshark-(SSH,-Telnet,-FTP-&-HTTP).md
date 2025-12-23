@@ -110,7 +110,7 @@ The Telnet payload contained readable text (server banner, prompts, and user inp
 
 - Right-click a Telnet packet → **Follow** → **TCP Stream**
 
-This reconstructed the full conversation and revealed the login exchange and commands in cleartext, demonstrating that Telnet offers no confidentiality on the network.
+This reconstructed the full conversation and revealed the login exchange and commands in clear text, demonstrating that Telnet offers no confidentiality on the network.
 
 <figure class="half">
     <a href="/assets/images/wireshark010.png"><img src="/assets/images/wireshark010.png"></a>
@@ -173,7 +173,7 @@ This confirms a key security issue: classic FTP transmits authentication details
 <p align="center"><a href="/assets/images/wireshark018.png"><img src="/assets/images/wireshark018.png"></a></p>
 
 ### Security takeaway
-FTP should not be used for authentication or file transfer over untrusted networks because credentials can be captured. Prefer SFTP or FTPS depending on environment and requirements.
+FTP should not be used for authentication or file transfer over untrusted networks because credentials can be captured. Prefer SFTP or FTPS depending on the environment and requirements.
 
 ---
 
@@ -210,7 +210,7 @@ HTTP does not provide confidentiality. Anyone with capture visibility can see re
 
 ## Key results (what this lab proved)
 - Telnet exposed the full interactive session in readable form, including authentication and commands.
-- SSH protected session contents; only negotiation and encrypted payload were visible.
+- SSH-protected session contents; only negotiation and encrypted payload were visible.
 - FTP exposed the login exchange (`USER` / `PASS`) on the network.
 - HTTP exposed requests in plaintext and allowed reconstruction of downloaded content.
 
@@ -237,7 +237,7 @@ This mini-project was inspired by the following tutorial, which helped me unders
 - Dan’s Courses — *Wireshark Packet Sniffing Usernames, Passwords, and Web Pages* (YouTube, 2015):
 Wireshark Packet Sniffing By [Dan’s Courses][Yt-Link]
 
-Wireshark was originally created by Gerald Combs and is developed and maintained by the Wireshark Foundation and the open-source community.
+Wireshark was created by Gerald Combs and is developed and maintained by the Wireshark Foundation and the open-source community.
 
 
 [Yt-Link]: https://www.youtube.com/watch?v=r0l_54thSYU
