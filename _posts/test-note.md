@@ -1,3 +1,0 @@
-
-### This is a test note for Obsidian!
-$Hello$
