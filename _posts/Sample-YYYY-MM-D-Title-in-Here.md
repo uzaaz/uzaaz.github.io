@@ -47,3 +47,12 @@ tags:
 [Link]: https://www.site.com/      ## this is the link source, add in the bottom
 ```
 
+
+> [!TIP]
+> This is a TIP
+
+> [!NOTE]
+> This is a NOTE
+
+> [!warning] 
+> This is a WARNING

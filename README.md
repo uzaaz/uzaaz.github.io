@@ -27,3 +27,6 @@ I'm here to learn, share knowledge, and meet people who are passionate about cyb
 If you’re interested in SOC work, blue/red teaming, forensics, or threat hunting, I’d be happy to connect, exchange ideas, and get inspired by your experience.
 
 > I read **logs** so attackers don't write the **story**.
+
+
+
