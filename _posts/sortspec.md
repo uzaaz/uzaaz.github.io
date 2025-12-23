@@ -1,0 +1,6 @@
+---
+sorting-spec: |-
+  %
+  sortspec
+  attachments
+---
