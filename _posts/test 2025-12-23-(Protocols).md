@@ -49,12 +49,6 @@ tags:
 ![[image-0003.png]]
 
 
-# =={orange}this a test==
-## =={orange}this a test==
-### =={yellow}this a test==
-#### =={green}this a test==
-##### =={cyan}this a test==
-###### =={blue}this a test==
-=={accent}this a test==
+
 
 

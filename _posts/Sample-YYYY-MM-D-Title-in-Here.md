@@ -56,3 +56,11 @@ tags:
 
 > [!warning] 
 > This is a WARNING
+
+=={red}text==
+=={yellow}test==
+=={orange}text==
+==text==
+=={cyan}text==
+=={blue}text==
+
