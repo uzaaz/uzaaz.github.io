@@ -27,15 +27,15 @@ tags:
 ---
 
 
-<p align="center"><a href="/assets/images/banner-001.png"><img src="/assets/images/banner-001.png"></a></p>
+``<p align="center"><a href="/assets/images/banner-001.png"><img src="/assets/images/banner-001.png"></a></p>``
 
-<p align="center"><a href="/assets/images/image-0001.png"><img src="/assets/images/image-0001.png"></a></p>
+`<p align="center"><a href="/assets/images/image-0001.png"><img src="/assets/images/image-0001.png"></a></p>`
 
-<p align="center"><a href="/assets/images/image-0002.png"><img src="/assets/images/image-0002.png"></a></p>
+`<p align="center"><a href="/assets/images/image-0002.png"><img src="/assets/images/image-0002.png"></a></p>`
 
-<p align="center"><a href="/assets/images/image-0003.png"><img src="/assets/images/image-0003.png"></a></p>
+`<p align="center"><a href="/assets/images/image-0003.png"><img src="/assets/images/image-0003.png"></a></p>`
 
-<p align="center"><a href="/assets/images/image-0004.png"><img src="/assets/images/image-0004.png"></a></p>
+``<p align="center"><a href="/assets/images/image-0004.png"><img src="/assets/images/image-0004.png"></a></p>``
 
 ![[banner-001.png]]
 
