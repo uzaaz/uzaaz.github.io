@@ -217,28 +217,26 @@ HTTP does not provide confidentiality. Anyone with capture visibility can see re
 This exercise reinforced a practical defensive lesson: protocol selection is a security control. Whenever possible, use encrypted options (SSH/SFTP/FTPS/HTTPS) and disable legacy plaintext services (Telnet/FTP/HTTP for sensitive use cases).
 
 ---
-
-> [!TIP] ## Reproducibility notes
-> - If your VMs are bridged, capture on the host’s physical interface (Wi‑Fi/Ethernet) that shows activity when you generate lab traffic.
-> - Use a port-based capture filter (22/23/21/80) to reduce noise, then apply display filters per protocol for analysis.
-> - “Follow TCP Stream” is the fastest way to reconstruct Telnet/FTP conversations for learning and validation in a lab setting.
-> - 
+## Reproducibility notes
+ - If your VMs are bridged, capture on the host’s physical interface (Wi‑Fi/Ethernet) that shows activity when you generate lab traffic.
+ - Use a port-based capture filter (22/23/21/80) to reduce noise, then apply display filters per protocol for analysis.
+ - “Follow TCP Stream” is the fastest way to reconstruct Telnet/FTP conversations for learning and validation in a lab setting.
 
 ---
 
-> [!warning] ## Disclaimer
+## Disclaimer
 This project is for educational purposes in an isolated lab. Do not capture or inspect traffic on networks without explicit authorization.
 
 ---
 
-> [!NOTE] ## Credits / Acknowledgments
->
+## Credits / Acknowledgments
+
 This mini-project was inspired by the following tutorial, which helped me understand how different protocols appear in Wireshark and how to analyze them responsibly:
->
->- Dan’s Courses — *Wireshark Packet Sniffing Usernames, Passwords, and Web Pages* (YouTube, 2015):
+
+- Dan’s Courses — *Wireshark Packet Sniffing Usernames, Passwords, and Web Pages* (YouTube, 2015):
 Wireshark Packet Sniffing By [Dan’s Courses][Yt-Link]
->
+
 Wireshark was created by Gerald Combs and is developed and maintained by the Wireshark Foundation and the open-source community.
->
+
 
 [Yt-Link]: https://www.youtube.com/watch?v=r0l_54thSYU
