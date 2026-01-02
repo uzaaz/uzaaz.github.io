@@ -1,7 +1,7 @@
 ---
 layout: single
 header:
-  overlay_image: /assets/images/banner-012.jpg
+  overlay_image: /assets/images/banner-014.jpg
   overlay_filter: 0.6
 toc: true
 toc_depth: 6
