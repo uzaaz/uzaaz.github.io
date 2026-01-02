@@ -2,7 +2,7 @@
 layout: single
 title: "SSH Two-Factor Authentication (2FA) Setup Guide - CentOS 9 Stream"
 header:
-  overlay_image: /assets/images/banner-012.jpg
+  overlay_image: /assets/images/banner-013.jpg
   overlay_filter: 0.6
 toc: true
 toc_depth: 6
