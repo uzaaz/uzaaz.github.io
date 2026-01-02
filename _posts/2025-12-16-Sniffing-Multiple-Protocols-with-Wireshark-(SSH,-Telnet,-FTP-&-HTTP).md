@@ -26,7 +26,7 @@ tags:
   - metasploitable2  
 ---
 
-## Project goal
+## Project goal:
 This mini-project documents a controlled lab exercise where I captured and analyzed network traffic with Wireshark to compare how four common protocols behave on the network: SSH, Telnet, FTP, and HTTP. The focus is defensive learning: understanding what information is visible to anyone who can sniff traffic, and why using encrypted alternatives matters.
 
 ## Lab scope and ethics
